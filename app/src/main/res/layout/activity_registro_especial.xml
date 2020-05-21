@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView   android:text="¡REGISTRO ESPECIAL!"
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textSize="30dp"
+
+                android:textColor="#000000"/>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icono_especial"
+                android:layout_gravity="center"/>
+
+            <TextView android:text="email:"
+                android:id="@+id/text_correo"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/correo_registro"
+                android:layout_width="280dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <TextView android:text="Password:"
+                android:id="@+id/text_contra"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/contra_registro"
+                android:layout_width="280dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView android:text="Selecciona el tipo de Usuario:"
+                    android:id="@+id/TypeUser"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+
+                <RadioButton
+                    android:id="@+id/Admin"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Administrador"
+                    android:textColor="#000000"/>
+
+                <RadioButton
+                    android:id="@+id/Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textColor="#000000"/>
+
+                <RadioButton
+                    android:id="@+id/Registrador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrador"
+                    android:textColor="#000000"/>
+
+            </RadioGroup>
+
+            <TextView android:text="Nombre:"
+                android:id="@+id/text_nombre"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/nombre_registro"
+                android:layout_width="280dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:text="Cedula: (Formato: ##-####-####)"
+                android:id="@+id/text_cedula"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/cedula_registro"
+                android:layout_width="280dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:text="Descripcion:"
+                android:id="@+id/text_descripcion"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/descripcion_registro"
+                android:layout_width="280dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/btnLogin"
+                android:text="Registrar"
+                android:textColor="#000000"
+                android:onClick="Enviar"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
